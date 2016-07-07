@@ -7,9 +7,11 @@ module.exports = function (app) {
         produtosBanco.lista(function (erros, resultados) {
             res.render('produtos/lista',{lista: resultados});
         });
-
         connection.end();
+    });
 
+    app.get('/produtos/form', function (req, res) {
+        res.render('produtos/form');
     });
 };
 
