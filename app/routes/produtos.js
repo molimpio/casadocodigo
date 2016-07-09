@@ -18,8 +18,10 @@ module.exports = function (app) {
         connection.end();
     });
 
+    var erros = "";
+
     app.get('/produtos/form', function (req, res) {
-        res.render('produtos/form', {errosValidacao: erros});
+        res.render('produtos/form', {errosValidacao: erros, produto: ""});
     });
 
     app.post('/produtos', function (req, res) {
@@ -30,10 +32,19 @@ module.exports = function (app) {
         req.assert('preco', 'Preço é obrigatorio').isFloat();
 
 
-        var erros = req.validationErrors();
+        erros = req.validationErrors();
 
         if(erros){
-            res.render('produtos/form', {errosValidacao: erros});
+            res.format({
+                html: function(){
+                    res.status(400).render('produtos/lista', {errosValidacao: erros});
+                },
+                json: function () {
+                    res.status(400).json(erros);
+                }
+            });
+
+            res.render('produtos/form', {errosValidacao: erros, produto: produto});
             return;
         }
 
