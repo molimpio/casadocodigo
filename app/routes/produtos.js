@@ -19,20 +19,21 @@ module.exports = function (app) {
     });
 
     app.get('/produtos/form', function (req, res) {
-        res.render('produtos/form');
+        res.render('produtos/form', {errosValidacao: erros});
     });
 
     app.post('/produtos', function (req, res) {
 
         var produto = req.body;
 
-        var validadorTitulo = req.assert('titulo', 'Titulo é obrigatorio');
-        validadorTitulo.notEmpty();
+        req.assert('titulo', 'Titulo é obrigatorio').notEmpty();
+        req.assert('preco', 'Preço é obrigatorio').isFloat();
+
 
         var erros = req.validationErrors();
 
         if(erros){
-            res.render('produtos/form');
+            res.render('produtos/form', {errosValidacao: erros});
             return;
         }
 

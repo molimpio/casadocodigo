@@ -1,6 +1,15 @@
 <html>
 <body>
 <form action="/produtos" method="post">
+    <div class="erros">
+        <%if(errosValidacao){%>
+            <ul>
+                <%for(var i=0; i<errosValidacao.length; i++){%>
+                    <li><%=errosValidacao[i].param%> - <%=errosValidacao[i].msg%></li>
+                <%}%>
+            </ul>
+        <%}%>
+    </div>
     <div>
         <label for="titulo">Título</label>
         <input type="text" id="titulo" name="titulo" placeholder="coloque o titulo">
