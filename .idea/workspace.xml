@@ -26,8 +26,8 @@
       <file leaf-file-name="produtos.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/produtos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+            <state relative-caret-position="116">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -85,10 +85,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
-    <option name="y" value="333" />
+    <option name="x" value="-4" />
+    <option name="y" value="4" />
     <option name="width" value="1378" />
-    <option name="height" value="394" />
+    <option name="height" value="320" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -247,15 +247,15 @@
       <workItem from="1467978589885" duration="3854000" />
       <workItem from="1468001423028" duration="176000" />
       <workItem from="1468063298713" duration="3054000" />
-      <workItem from="1468321656873" duration="1781000" />
+      <workItem from="1468321656873" duration="2052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26097000" />
+    <option name="totallyTimeSpent" value="26368000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="333" width="1378" height="394" extended-state="1" />
+    <frame x="-4" y="4" width="1378" height="320" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24253732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -559,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/produtos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+        <state relative-caret-position="116">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding />
         </state>
       </provider>
